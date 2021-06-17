@@ -4,7 +4,7 @@ test("capitalize take one parameter", () => {
   expect(capitalizeFirstLetters.length).toEqual(1);
 });
 
-test("capitalize all words in sentence", () => {
+describe("capitalize all words in sentence", () => {
   test("when the sentence has one word", () => {
     expect(capitalizeFirstLetters("hello")).toEqual("Hello");
   });
@@ -16,6 +16,6 @@ test("capitalize all words in sentence", () => {
   });
 
   test("when the sentence has no word", () => {
-    expect(capitalizeFirstLetters("i am learning tdd")).toBeFalsy();
+    expect(capitalizeFirstLetters("")).toBeFalsy();
   });
 });
